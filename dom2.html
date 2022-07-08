@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom demo</title>
+
+    <script>
+        function myFunction() {
+
+            var x = document.getElementsByClassName("para1");
+            x[0].innerHTML = "This is a new paragraph"
+            x[1].style.color = 'blue'
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <p class="para1">This is a paragraph</p>
+
+    <p class="para1">This is a paragraph</p>
+
+    <button onclick="myFunction()">Click here</button>
+
+</body>
+
+</html>

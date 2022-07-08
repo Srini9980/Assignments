@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom loginform</title>
+    <script>
+
+        function myFun() {
+            var uname = document.loginForm.username.value;
+            var pwd = document.loginForm.pwd.value;
+            var isValid = true;
+
+            if (uname == "" && pwd == "") {
+
+                isValid = false;
+                alert("please enter username and password");
+
+            }
+
+            else if (uname == "") {
+                isValid = false;
+                alert("Please enter username")
+            }
+            else if (pwd == "") {
+                isValid = false;
+                alert("Please enter password");
+            }
+
+            if (isValid) {
+
+                if (pwd == "admin123") {
+                    alert("Login success " + "welcome " + uname);
+                }
+                else {
+                    alert("Invalid username or password");
+                }
+
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>My login form using DOM </h2>
+
+    <form name="loginForm" onsubmit="myFun()">
+
+        Enter name : <input type="text" name="username" autofocus placeholder="Enter username" /><br>
+        Enetr password : <input type="password" name="pwd" placeholder="Enter password" /><br>
+        <input type="submit" />
+
+    </form>
+
+</body>
+
+</html>
