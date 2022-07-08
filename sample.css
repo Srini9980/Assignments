@@ -1,0 +1,14 @@
+body {
+    background-color: silver;
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+}
+h2 {   
+     text-align: center;
+     color: crimson;
+}
+p {
+    color: blue;
+    font-size: 20px;
+    background-color: aquamarine;
+}
