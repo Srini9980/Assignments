@@ -1,6 +1,6 @@
 # My Assignments
 
-Student Registrattion form for registerig the students details.
+Some html files added in the htl-assignments branch.
 
 Git (/ɡɪt/) is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively 
 developing source code during software development.
