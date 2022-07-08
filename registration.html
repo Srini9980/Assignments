@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration</title>
+</head>
+
+<body>
+    <h1>User Registration</h1>
+    <form>
+
+        <div>
+            <label>FirstName</label>
+            <input type="text" name="fname" placeholder="Enter Firstname" autofocus pattern="[a-zA-Z]{5,10}"/>
+            
+        </div>
+
+        <div>
+            <label>LastName</label>
+            <input type="text" name="lname" placeholder="Enter Lastname" />
+        </div>
+
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="others"> Others
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email"  required/>
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="password" />
+        </div>
+
+        <div>
+            <label>DOB</label>
+            <input type="date" name="dob" />
+        </div>
+
+        <div>
+            <label>Country</label>
+            <select name="country">
+                <option value="">--SELECT--</option>
+                <option value="India">INDIA</option>
+                <option value="US">US</option>
+                <option value="UK">UK</option>
+                <option value="Japan">JAPAN</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Skill Set</label>
+            <input type="checkbox" name="skills" value="java">JAVA
+            <input type="checkbox" name="skills" value="sql">SQL
+            <input type="checkbox" name="skills" value="react">REACT
+            <input type="checkbox" name="skills" value="html">HTML
+            <input type="checkbox" name="skills" value="hibernet">HIBERNET
+            <input type="checkbox" name="skills" value="spring">SPRING
+        </div>
+
+        <div>
+            <input type="submit" name="register" />
+        </div>
+
+    </form>
+</body>
+
+</html>
