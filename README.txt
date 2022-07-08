@@ -1,5 +1,6 @@
 # My Assignments
 
+New JSS clientside file are added. 
 Some html files added in the htl-assignments branch.
 New css files are also added.
 
