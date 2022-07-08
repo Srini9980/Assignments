@@ -1,6 +1,7 @@
 # My Assignments
 
 Some html files added in the htl-assignments branch.
+New css files are also added.
 
 Git (/ɡɪt/) is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively 
 developing source code during software development.
