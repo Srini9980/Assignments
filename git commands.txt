@@ -1,0 +1,138 @@
+Section – 0
+
+-git –version // to check the version.
+-git help config // to see the commands for reference in google.
+-git mkdir project_dir // to create a folder in local file explorer.
+-git cd project_dir // going inside the folder.
+-git init // to initialize the git version database.
+-git status // to check the files are present and their status for committing.
+-git add . // to stage the file.
+-git commit -m “my first index.html commit” //to commit the file before pushing into git hub.
+-git add remote origin https://github.com/Srini9980/project_dir.git  // to add the remote origin path of git hub repository.
+-git -u push origin master // to push the file into git hub.
+
+
+After modifying some changes in the file……
+-git status // to check the status after it’s modification.
+-touch .gitignore // to ignore the files which we don’t want to commit into GitHub repository.
+-git status // to check the status whether it ignored the txt files.
+-git add .
+-git commit -m “commit after ignoring the txt files”
+-git push // to push the modified file into GitHub repository.
+ 
+-git log //to check the comments so far we used and detailed about author including the date of commit.
+
+Again made some modification in file……
+
+
+-git status // to check the status of modified file.
+-git reflog // to get the revert id for reverting back
+-git revert 4aa9351 // reverting the changes made in the previous step.
+-git status // to check the status of file.
+-git add . // stage the file.
+-git commit -m “After reverting the previous step of index.html file”.
+-git config –global alias.my-add ‘add’ //renaming the add command to my add.
+-git my-add .
+-git commit -m “after renaming the add command to my-add”.
+-git reflog // to get the commit id for reverting.
+-git revert 4aa9351.
+
+ 
+Section -1
+
+-git mkdir Assignments // to create a folder.
+-git cd Assignments // to go inside the project.
+-touch README.text // to create a file inside the folder.
+-git add . 
+-git commit -m “README.txt file added”
+-git branch html-assignments // to create a new branch.
+-git checkout html-assignments // to switching into created branch.
+After adding some html files…….
+-git status // to check all the status of newly added html files.
+-git add .
+-git commit -m “some html files added”
+
+
+After making some minor changes inside the html-assignments…………
+-git status // to get the modified status.
+-git add .
+-git commit -m “minor modification added”
+-git checkout master // switching to master branch.
+Again some minor modification done in README.txt file……….
+-git status // to get the status of modified README.txt file.
+-git add .
+-git commit -m “some modified in README.txt file”
+-git checkout html-assignments // switching to html-assignments branch.
+-git status // getting the status of html files.
+-git add .
+-git commit -m “modifies some files in html”
+-git checkout master // switching to master.
+-git merge html-assignments // to merge all the files inside the html-assignments branch to master.
+-git branch –delete html-assignments // to delete the local branch created. 
+
+Section – 2
+-git branch css-assignments
+-git checkout css-assignments
+After adding some css files.
+-git status
+-git add .
+-git commit -m “some css files added”
+-git checkout master
+Minor modification done in the README.txt file on 3rd line.
+-git status
+-git add .
+-git commit -m “Minor modification done on the README.txt file on 3rd file”.
+-git checkout css-assignments
+After some minor modified in some css files.
+-git status
+-git add .
+-git commit -m “some minor modification done on the css files”
+-git checkout master
+-git merge css-assignments
+-git push
+-git branch --delete css-assignments
+
+Section – 3
+-git branch js-assignments
+-git checkout js-assignments
+After adding some js files.
+-git status
+-git add .
+-git commit -m “some js files added”
+-git checkout master
+Minor modification done in the README.txt file on 1st line.
+-git status
+-git add .
+-git commit -m “Minor modification done on the README.txt file on 1st  file”.
+-git checkout js-assignments
+After some minor modified in some js files.
+-git status
+-git add .
+-git commit -m “some minor modification done on the js files”
+-git checkout master
+-git merge js-assignments
+-git push
+-git branch --delete js-assignments
+
+Section – 4
+Pushing source code to remote repository using Eclipse GIT plugin.
+-start Eclipse
+-go to perspective -> Git > Git repositories and click on to add Git repo
+-create a project in the Eclipse
+-do a right click on the project >Team > Share 
+          > Add to Git repo
+-again do the right click on the project > teams
+          > commit
+-select the files from unstaged changes and drag ti staged changes
+-commit some message in the commit message dialog box
+-provide a login credentials
+-instead of password create a token in GitHub
+-by selecting settings in the GitHub > 
+      Developer  settings > Personal access tokens > generate token
+-in the login credentials provide the token no instead of password
+-configure the GitHub url and push
+
+
+
+
+
