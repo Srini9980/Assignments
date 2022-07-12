@@ -42,6 +42,25 @@ Deleting Documents
 - db.movies.remove({title:"Pee Wee Herman's Big Adventure"}); // to deleting the document,
 -db.movies.remove({title:"Avatar"});
 
+Relationship. 
+
+-use users  // to switch to users collections.
+- db.users.insertOne({username:"GoodGuyGreg",first_name:"Good Guy",last_name:"Greg"})
+- db.users.insertOne({username:"ScumbagSteve",full_name:[{first:"Scumbag",last:"Steve"}]})
+- db.posts.insertOne({username:"GoodGuyGreg",title:"Passes out at party",body:"Wakes up early and cleans house"});
+- db.posts.insertMany([{username:"GoodGuyGreg",title:"Steals your identity",body:"Raises your credit score"},{username:"GoodGuyGreg",title:"Reports a bug in your code",body:"Sends you a Pull Request"},{username:"ScumbagSteve",title:"Borrows something",body:"Sells it"},{username:"ScumbagSteve",title:"Forks your repo on github",body:"Sets to private"}])
+- db.posts.insertOne({username:"ScumbagSteve",title:"Borrows everything",body:"The end"})
+- db.comments.insertMany([{username:"GoodGuyGreg",comment:"Hope you got a good deal!",post: ObjectId("62cbf6165ad1717745f3be43")},{username:"GoodGuyGreg",comment:"What's mine is yours!", post: ObjectId("62cbf6655ad1717745f3be45")},{username:"GoodGuyGreg",comments:"Don't violate the licensing agreement",post: ObjectId("62cbf6165ad1717745f3be44")},{username:"ScumbagSteve",comment:"It still isn't clean",post:ObjectId("62cbf4995ad1717745f3be40")},{username:"ScumbagSteve",comment:"Denied your PR cause I found a hack",post:ObjectId("62cbf6165ad1717745f3be42")}]);
+- db.users.find().pretty();
+-db.posts.find().pretty();
+-db.comments.find().pretty();
+- db.posts.find({username:"GoodGuyGreg"}).pretty();
+-db.posts.find({username:"ScumbagSteve"}).pretty();
+- db.comments.find({username:"GoodGuyGreg"}).pretty();
+- db.comments.find({username:"ScumbagSteve”}).pretty();
+
+
+
 
 
 
